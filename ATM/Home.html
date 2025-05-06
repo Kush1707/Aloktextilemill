@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALOK TEXTILE MILL</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #f8fafc;
+            color: #1f2937;
+        }
+        .hero-section {
+            background: linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.7)), url('background.jpg') center/cover no-repeat;
+            min-height: 500px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .service-card, .process-card, .provide-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .service-card:hover, .process-card:hover, .provide-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+        }
+        .gallery-images img {
+            transition: transform 0.3s ease;
+        }
+        .gallery-images img:hover {
+            transform: scale(1.05);
+        }
+        .contact-form input, .contact-form textarea {
+            transition: border-color 0.3s ease;
+        }
+        .contact-form input:focus, .contact-form textarea:focus {
+            border-color: #3b82f6;
+            outline: none;
+        }
+        .animate-on-scroll {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+        .animate-on-scroll.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+    <div class="bg-white shadow">
+        <div class="container mx-auto px-4 py-4 flex justify-center items-center">
+            <img src="C:\Users\Kushagra kashyap\Desktop\ATM\LOGO IMAGE\LOGO.jpg" alt="ALOK TEXTILE MILL Logo" class="h-16 md:h-20">
+        </div>
+    </div>
+    <section class="relative min-h-[700px] md:min-h-[800px] flex items-center justify-center text-white text-center overflow-hidden">        <div class="absolute inset-0">
+            <img src="C:\Users\Kushagra kashyap\Desktop\ATM\Banner image\ChatGPT Image May 5, 2025, 11_18_59 PM.png" alt="Printed Fabric Background" class="w-full h-full object-cover brightness-50">
+            </div>
+        <div class="relative z-10 px-4">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4 animate-on-scroll">Transforming Visions into Vibrant Textiles</h1>
+            <p class="text-lg md:text-xl animate-on-scroll">Discover our world-class printing services tailored to your needs.</p>
+        </div>
+    </section>
+    
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 animate-on-scroll">Our Services</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="service-card bg-gray-50 p-8 rounded-xl shadow-lg animate-on-scroll">
+                    <h3 class="text-xl font-semibold mb-2">Reactive Printing</h3>
+                    <p class="text-gray-600">Suitable for:</p>
+                    <ul class="list-disc list-inside text-gray-600">
+                        <li>Pure Silk Sarees, Handloom Silk</li>
+                        <li>Crepe, Chiffon, Georgette</li>
+                        <li>Cotton, Silk, Knits, Lycra</li>
+                        <li>Saree Fabrics, Dress Material</li>
+                        <li>Home Curtains</li>
+                    </ul>
+                </div>
+                <div class="service-card bg-gray-50 p-8 rounded-xl shadow-lg animate-on-scroll">
+                    <h3 class="text-xl font-semibold mb-2">Sublimation Printing</h3>
+                    <p class="text-gray-600">Suitable for:</p>
+                    <ul class="list-disc list-inside text-gray-600">
+                        <li>Blended Fabrics</li>
+                    </ul>
+                    <p class="text-gray-600 mt-2">Ideal For:</p>
+                    <ul class="list-disc list-inside text-gray-600">
+                        <li>Exclusive Sarees & Dress Materials</li>
+                        <li>Promotional Items – T-shirts, Bags</li>
+                        <li>Home Decor – Curtains, Cushions</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <style>
+        section {
+            padding: 60px 20px;
+            background-color: #f9f9f9;
+        }
+    
+        h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+            color: #222;
+        }
+    
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+    
+        .service-card {
+            background-color: #fff;
+            border-radius: 16px;
+            padding: 25px 20px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.06);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+    
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        }
+    
+        .service-card h3 {
+            color: #003366;
+            margin-bottom: 12px;
+            font-size: 1.25rem;
+        }
+    
+        .service-card p {
+            color: #555;
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+    
+        @media (max-width: 768px) {
+            h2 {
+                font-size: 2rem;
+            }
+    
+            .service-card {
+                padding: 20px 15px;
+            }
+        }
+    </style>
+    
+    <section class="what-we-provide">
+        <h2>What We Provide</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <h3>01. Advanced Printing Technology</h3>
+                <p>We employ cutting-edge digital printing machines from Japan to deliver high-resolution prints with exceptional clarity, vibrant colors, and precise detailing — ensuring your designs are brought to life with accuracy and brilliance.</p>
+            </div>
+            <div class="service-card">
+                <h3>02. Diverse Fabric Selection</h3>
+                <p>Our extensive range of printable fabrics includes cotton, silk, Lycra, knits, polyester, and more — all carefully curated to suit the diverse demands of fashion, home décor, and industrial applications.</p>
+            </div>
+            <div class="service-card">
+                <h3>03. Uncompromising Quality Assurance</h3>
+                <p>At every stage of production, from pre-treatment to post-processing, we implement stringent quality control protocols to ensure flawless output that meets the highest industry standards.</p>
+            </div>
+            <div class="service-card">
+                <h3>04. Timely and Reliable Delivery</h3>
+                <p>We value your time. Our well-structured production process and dedicated logistics ensure on-time delivery — every time — helping you meet your own project deadlines with confidence.</p>
+            </div>
+            <div class="service-card">
+                <h3>05. Full-Service Customization</h3>
+                <p>Whether you're working on a single-meter prototype or a large-scale production run of 10,000+ meters, we tailor our services to your exact needs. From fabric selection to design execution and final finishing, we offer end-to-end customization for seamless project execution.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section class="printing-process">
+        <h2>Printing Process</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <h3>1. Comprehensive Fabric Inspection</h3>
+                <p>We begin with a thorough examination of your fabric to identify and address any imperfections, ensuring a flawless printing surface.</p>
+            </div>
+            <div class="service-card">
+                <h3>2. Tailored Pre-Treatment</h3>
+                <p>Based on the fabric type and desired outcome, we apply specific pre-treatment methods. This may include scouring to remove impurities or applying special coatings to enhance color absorption.</p>
+            </div>
+            <div class="service-card">
+                <h3>3. Advanced Digital Printing</h3>
+                <p>Utilizing state-of-the-art digital printing technology, we bring your designs to life with exceptional color accuracy, sharp details, and unparalleled vibrancy.</p>
+            </div>
+            <div class="service-card">
+                <h3>4. Secure Post-Treatment</h3>
+                <p>After printing, we employ post-treatment techniques to lock in color and enhance fabric properties. This may involve heat setting, washing, or applying specialized finishes.</p>
+            </div>
+            <div class="service-card">
+                <h3>5. Meticulous Washing</h3>
+                <p>We carefully wash the printed fabrics to remove any residual chemicals, ensuring a clean and ready-to-use final product.</p>
+            </div>
+            <div class="service-card">
+                <h3>6. Finishing Touches</h3>
+                <p>Depending on the fabric and its intended use, we apply various finishing techniques such as softening treatments, wrinkle-resistant finishes, or fire-retardant applications.</p>
+            </div>
+            <div class="service-card">
+                <h3>7. Specialized Chemical Treatments (Optional)</h3>
+                <p>For specific projects, we offer specialized chemical treatments to enhance fabric properties, including water repellency, stain resistance, or antimicrobial finishes.</p>
+            </div>
+            <div class="service-card">
+                <h3>8. Prompt Delivery</h3>
+                <p>We prioritize timely delivery to ensure your printed fabrics reach you within the agreed-upon timeframe.</p>
+            </div>
+        </div>
+    </section>
+    
+     <section class="gallery">
+        <h2>Gallery</h2>
+        <h2>Factory images</h2>
+        <div class="gallery-images">
+            <img src="C:\Users\Kushagra kashyap\Desktop\ATM\Factory images\IMG-20250408-WA0020.jpg" alt="Factory Image 1">
+            <img src="C:\Users\Kushagra kashyap\Desktop\ATM\Factory images\IMG-20250408-WA0019.jpg" alt="Factory Image 2">
+            <img src="C:\Users\Kushagra kashyap\Desktop\ATM\Factory images\IMG-20250408-WA0017.jpg" alt="Factory Image 3">
+            <img src="C:\Users\Kushagra kashyap\Desktop\ATM\Factory images\IMG-20250408-WA0016.jpg" alt="Factory Image 4">
+            <img src="C:\Users\Kushagra kashyap\Desktop\ATM\Factory images\IMG-20250408-WA0015.jpg" alt="Factory Image 5">
+            <img src="C:\Users\Kushagra kashyap\Desktop\ATM\Factory images\IMG-20250408-WA0014.jpg" alt="Factory Image 6">
+            <img src="C:\Users\Kushagra kashyap\Desktop\ATM\Factory images\IMG-20250408-WA0012.jpg" alt="Factory Image 7">
+            <img src="C:\Users\Kushagra kashyap\Desktop\ATM\Factory images\IMG-20250408-WA0011.jpg" alt="Factory Image 8">
+            <img src="C:\Users\Kushagra kashyap\Desktop\ATM\Factory images\IMG-20250408-WA0010.jpg" alt="Factory Image 9">
+            <img src="C:\Users\Kushagra kashyap\Desktop\ATM\Factory images\IMG-20250408-WA0009.jpg" alt="Factory Image 10">
+            <img src="C:\Users\Kushagra kashyap\Desktop\ATM\Factory images\IMG-20250408-WA0008.jpg" alt="Factory Image 11">
+            <img src="C:\Users\Kushagra kashyap\Desktop\ATM\Factory images\IMG-20250408-WA0006.jpg" alt="Factory Image 12">
+            <img src="C:\Users\Kushagra kashyap\Desktop\ATM\Factory images\IMG-20250408-WA0005.jpg" alt="Factory Image 13">
+            <img src="C:\Users\Kushagra kashyap\Desktop\ATM\Factory images\IMG-20250408-WA0001.jpg" alt="Factory Image 14">
+        </div>
+        <style>
+            .gallery {
+                padding: 60px 20px;
+                background-color: #fff;
+            }
+        
+            .gallery h2 {
+                text-align: center;
+                font-size: 2.5rem;
+                margin-bottom: 40px;
+                color: #222;
+            }
+        
+            .gallery-images {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+                gap: 20px;
+                max-width: 1200px;
+                margin: 0 auto;
+            }
+        
+            .gallery-images img {
+                border-radius: 16px;
+                height: 200px;
+                object-fit: cover;
+                width: 100%;
+                transition: transform 0.3s ease, box-shadow 0.3s ease;
+            }
+        
+            .gallery-images img:hover {
+                transform: scale(1.03);
+                box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+            }
+        
+            @media (max-width: 600px) {
+                .gallery h2 {
+                    font-size: 2rem;
+                }
+        
+                .gallery-images img {
+                    height: 160px;
+                }
+            }
+        </style>
+        
+        <section class="gallery">
+            <h2>Print Designs</h2>
+    <div class="gallery-images">
+        
+                    <img src="C:\Users\Kushagra kashyap\Desktop\ATM\Gallery images\IMG-20250410-WA0002.jpg" alt="Design Image 1" class="rounded-2xl shadow-md object-cover w-full h-64">
+                    <img src="C:\Users\Kushagra kashyap\Desktop\ATM\Gallery images\IMG-20250410-WA0003.jpg" alt="Design Image 2" class="rounded-2xl shadow-md object-cover w-full h-64">
+                    <img src="C:\Users\Kushagra kashyap\Desktop\ATM\Gallery images\IMG-20250410-WA0004.jpg" alt="Design Image 3" class="rounded-2xl shadow-md object-cover w-full h-64">
+                    <img src="C:\Users\Kushagra kashyap\Desktop\ATM\Gallery images\IMG-20250410-WA0005.jpg" alt="Design Image 4" class="rounded-2xl shadow-md object-cover w-full h-64">
+                    <img src="C:\Users\Kushagra kashyap\Desktop\ATM\Gallery images\IMG-20250410-WA0006.jpg" alt="Design Image 5" class="rounded-2xl shadow-md object-cover w-full h-64">
+                    <img src="C:\Users\Kushagra kashyap\Desktop\ATM\Gallery images\IMG-20250410-WA0007.jpg" alt="Design Image 6" class="rounded-2xl shadow-md object-cover w-full h-64">
+                    <img src="C:\Users\Kushagra kashyap\Desktop\ATM\Gallery images\IMG-20250410-WA0008.jpg" alt="Design Image 7" class="rounded-2xl shadow-md object-cover w-full h-64">
+                    <img src="C:\Users\Kushagra kashyap\Desktop\ATM\Gallery images\IMG-20250410-WA0009.jpg" alt="Design Image 8" class="rounded-2xl shadow-md object-cover w-full h-64">
+                    <img src="C:\Users\Kushagra kashyap\Desktop\ATM\Gallery images\IMG-20250410-WA0010.jpg" alt="Design Image 9" class="rounded-2xl shadow-md object-cover w-full h-64">
+                    <img src="C:\Users\Kushagra kashyap\Desktop\ATM\Gallery images\IMG-20250410-WA0011.jpg" alt="Design Image 10" class="rounded-2xl shadow-md object-cover w-full h-64">
+                    <img src="C:\Users\Kushagra kashyap\Desktop\ATM\Gallery images\IMG-20250410-WA0012.jpg" alt="Design Image 11" class="rounded-2xl shadow-md object-cover w-full h-64">
+                    <img src="C:\Users\Kushagra kashyap\Desktop\ATM\Gallery images\IMG-20250410-WA0013.jpg" alt="Design Image 12" class="rounded-2xl shadow-md object-cover w-full h-64">
+                    <img src="C:\Users\Kushagra kashyap\Desktop\ATM\Gallery images\IMG-20250410-WA0014.jpg" alt="Design Image 13" class="rounded-2xl shadow-md object-cover w-full h-64">
+                    <img src="C:\Users\Kushagra kashyap\Desktop\ATM\Gallery images\IMG-20250410-WA0015.jpg" alt="Design Image 14" class="rounded-2xl shadow-md object-cover w-full h-64">
+                    <img src="C:\Users\Kushagra kashyap\Desktop\ATM\Gallery images\IMG-20250410-WA0016.jpg" alt="Design Image 15" class="rounded-2xl shadow-md object-cover w-full h-64">
+                    <img src="C:\Users\Kushagra kashyap\Desktop\ATM\Gallery images\IMG-20250410-WA0017.jpg" alt="Design Image 16" class="rounded-2xl shadow-md object-cover w-full h-64">
+                    <img src="C:\Users\Kushagra kashyap\Desktop\ATM\Gallery images\IMG-20250410-WA0018.jpg" alt="Design Image 17" class="rounded-2xl shadow-md object-cover w-full h-64">
+                    <img src="C:\Users\Kushagra kashyap\Desktop\ATM\Gallery images\IMG-20250410-WA0019.jpg" alt="Design Image 18" class="rounded-2xl shadow-md object-cover w-full h-64">
+                    <img src="C:\Users\Kushagra kashyap\Desktop\ATM\Gallery images\IMG-20250410-WA0020.jpg" alt="Design Image 19" class="rounded-2xl shadow-md object-cover w-full h-64">
+                    <img src="C:\Users\Kushagra kashyap\Desktop\ATM\Gallery images\IMG-20250410-WA0021.jpg" alt="Design Image 20" class="rounded-2xl shadow-md object-cover w-full h-64">
+                    <img src="C:\Users\Kushagra kashyap\Desktop\ATM\Gallery images\IMG-20250410-WA0022.jpg" alt="Design Image 21" class="rounded-2xl shadow-md object-cover w-full h-64">
+                    <img src="C:\Users\Kushagra kashyap\Desktop\ATM\Gallery images\IMG-20250410-WA0023.jpg" alt="Design Image 22" class="rounded-2xl shadow-md object-cover w-full h-64">
+                    <img src="C:\Users\Kushagra kashyap\Desktop\ATM\Gallery images\IMG-20250410-WA0024.jpg" alt="Design Image 23" class="rounded-2xl shadow-md object-cover w-full h-64">
+                    <img src="C:\Users\Kushagra kashyap\Desktop\ATM\Gallery images\IMG-20250410-WA0025.jpg" alt="Design Image 24" class="rounded-2xl shadow-md object-cover w-full h-64">
+                    <img src="C:\Users\Kushagra kashyap\Desktop\ATM\Gallery images\IMG-20250410-WA0026.jpg" alt="Design Image 25" class="rounded-2xl shadow-md object-cover w-full h-64">
+                    <img src="C:\Users\Kushagra kashyap\Desktop\ATM\Gallery images\IMG-20250410-WA0027.jpg" alt="Design Image 26" class="rounded-2xl shadow-md object-cover w-full h-64">
+            </div>
+        </section>
+        
+
+        <section class="py-16 bg-white">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 animate-on-scroll">Why Choose Alok Textile Mill?</h2>
+                <div class="max-w-3xl mx-auto space-y-6 animate-on-scroll">
+                    <p><strong>1. Expertise and Experience:</strong> Years of experience delivering top-notch textile printing results.</p>
+                    <p><strong>2. Cutting-Edge Technology:</strong> Latest digital printing technologies for superior outcomes.</p>
+                    <p><strong>3. Customization:</strong> Flexible processes for personalized solutions.</p>
+                    <p><strong>4. Quality Assurance:</strong> Strict quality control for the highest standards.</p>
+                    <p><strong>5. Sustainability:</strong> Eco-friendly practices to minimize waste.</p>
+                </div>
+            </div>
+        </section>
+    
+        <section class="py-16 bg-gray-100">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 animate-on-scroll">Contact Us</h2>
+                <p class="text-lg text-center max-w-2xl mx-auto mb-8 animate-on-scroll">
+                    Ready to bring your textile designs to life? <strong>Contact Alok Textile Mill today!</strong> We're here to guide you from design to delivery.
+                </p>
+                <form class="contact-form max-w-lg mx-auto space-y-4 animate-on-scroll">
+                    <input type="text" name="name" placeholder="Your Name" required class="w-full p-3 border border-gray-300 rounded-lg">
+                    <input type="email" name="email" placeholder="Your Email" required class="w-full p-3 border border-gray-300 rounded-lg">
+                    <textarea name="message" rows="5" placeholder="Your Message or Quote Request" required class="w-full p-3 border border-gray-300 rounded-lg"></textarea>
+                    <button type="submit" class="w-full p-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700">Get a Quote</button>
+                </form>
+            </div>
+        </section>
+    
+        <section class="py-16 bg-white">
+            <div class="container mx-auto px-4 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6 animate-on-scroll">Address</h2>
+                <p class="text-lg animate-on-scroll">Plot No. 29, 15, NH-19, Mewla Maharajpur, Sector 46, Faridabad, Haryana 121010, Contact 9717793481</p>
+            </div>
+        </section>
+    
+        <footer class="bg-gray-900 text-white text-center py-6">
+            <p>&copy; 2025 ALOK TEXTILE MILL. All rights reserved.</p>
+        </footer>
+    
+        <script>
+            // Scroll animation
+            const elements = document.querySelectorAll('.animate-on-scroll');
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, { threshold: 0.1 });
+    
+            elements.forEach(element => observer.observe(element));
+        </script>
+    </body>
+    </html>
